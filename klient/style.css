@@ -1,0 +1,9 @@
+body{
+    margin: 0px;
+    background-color: aqua;
+}
+#divy{
+    height: 300px;
+    width: 200px;
+    background-color: burlywood;
+}
