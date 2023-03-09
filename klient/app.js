@@ -115,7 +115,7 @@ async function get_se(){
           label: 'Wykonane i Nie wykonane',
           data: [wykonane, niewykonane],
           backgroundColor: ["green","red"],
-          tickColor:["white", "white"],
+          borderColor: ["white", "white"],
           borderWidth: 2
         }]
       },
