@@ -80,6 +80,4 @@ app.get("/zaz/:ID/:czywyk", function(req,res){
 
 
 
-
-
 app.listen(port)

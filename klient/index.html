@@ -9,13 +9,20 @@
 </head>
 <body id="body">
     <div>
-    <input type="text" id="nazwa1">
-    <input type="text" id="termin1">
+    <input placeholder="Nazwa" type="text" id="nazwa1">
+    <input placeholder="Dni do końca" type="text" id="termin1">
     <button id="dodaj" onclick="dodaj()">Dodaj</button>
 </div>
 <div id="oglosenia"></div>
 
-
+<div id="chart">
+    <canvas id="myChart"></canvas>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
+  
+   
     <script src="app.js"></script>
 </body>
 </html>

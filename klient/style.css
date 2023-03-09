@@ -28,3 +28,7 @@ h1{
 p{
     color: aqua;
 }
+#chart{
+    height: 500px;
+    width: 1000px;
+}
