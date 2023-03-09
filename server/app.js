@@ -54,9 +54,29 @@ app.get("/del/:ID", function(req,res){
         if(err){
             console.log(err)
         }
-        
+        res.send("del")
     })
 }) 
+app.get("/zaz/:ID/:czywyk", function(req,res){
+    const idd = req.params.ID
+    const czywyk = req.params.czywyk
+    if(czywyk == 0){
+        const sqll = `UPDATE zadanie SET czy_wykonane = "1" WHERE ID = '${idd}'`
+        con.query(sqll,function(err,result,fields){
+           if(err){ 
+            console.log(err)}
+            res.send("zmieniono")
+        })
+    }
+    else if(czywyk == 1){
+        const sqql = `UPDATE zadanie SET czy_wykonane = "0" WHERE ID = '${idd}'`
+        con.query(sqql,function(err,result,fields){
+            if(err){ 
+                console.log(err)}
+                res.send("ok")
+        })
+    }
+})
 
 
 

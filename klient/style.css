@@ -1,9 +1,30 @@
 body{
     margin: 0px;
-    background-color: aqua;
+    background-color: rgb(61, 63, 63);
+    
 }
 #divy{
     height: 300px;
-    width: 200px;
-    background-color: burlywood;
+    width: 250px;
+    background-color: rgb(38, 75, 38);
+    border: 3px solid black;
+    border-radius: 15px;
+}
+#oglosenia{
+    display: flex;
+    gap: 10px;
+    margin-left: 50px;
+}
+button{
+    display: block;
+    
+}
+.usun{
+ margin-top: 30%;   
+}
+h1{
+    color: aqua;
+}
+p{
+    color: aqua;
 }
